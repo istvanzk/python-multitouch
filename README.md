@@ -1,8 +1,16 @@
-# Python FT5406 Multitouch Driver
+# Python Multitouch Drivers
 
-Multi-touch pure Python driver for the official 7" touchscreen display.
+Multi-touch pure Python drivers
 
-# Beta
+FT5406: for the official 7" touchscreen display (by Pimoroni).
+
+EP0510M09: for the 4DSystems GEN4-4DPI-50CT-CLB, https://4dsystems.com.au/gen4-4dpi-50ct-clb (by IstvanZK)
+
+# EP0510M09 Alpha, based on Pimoroni FT5406 Beta
+
+Uses python3-evdev, https://python-evdev.readthedocs.io/en/latest/index.html
+
+# FT5406 Beta
 
 This is a work in progress, but lets you use all 10 points of multitouch on the official 7" Pi Touchscreen in Python.
 
