@@ -26,7 +26,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-classifiers = ['Development Status :: Development/Alpha',
+classifiers = ['Development Status :: Development/Beta',
                'Operating System :: POSIX :: Linux',
                'License :: OSI Approved :: MIT License',
                'Intended Audience :: Developers',
@@ -40,7 +40,7 @@ setup(name		= 'ft5406-ep0510m09',
 	version		= '0.0.3',
 	author		= 'Philip Howard, Istvan Z. Kovacs',
 	author_email= 'phil@pimoroni.com, istvanzk@gmail.com',
-	description	= 'A module to drive the official FT5406 Raspberry Pi 7" or the 4DSystems GEN4-4DPI-50CT-CLB touchscreen',
+	description	= 'A module to drive the official FT5406 Raspberry Pi 7" or the EP0510M09 4DSystems GEN4-4DPI-50CT-CLB touchscreen',
 	long_description= open('README.md').read() + open('CHANGELOG.txt').read(),
 	license		= 'MIT',
 	keywords	= 'Raspberry Pi Explorer HAT',

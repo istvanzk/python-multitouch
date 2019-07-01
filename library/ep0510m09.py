@@ -127,8 +127,8 @@ class Touches(list):
         return [touch for touch in self if touch.valid]
 
 class Touchscreen(object):
-	"""Use udev and evdev to get the touch event"""
-	
+    """Use udev and evdev to get the touch event"""
+
     TOUCHSCREEN_EVDEV_NAME = 'EP0510M09'
 
     def __init__(self, device=None):
@@ -196,7 +196,6 @@ class Touchscreen(object):
             if event.type == ecodes.EV_SYN: # Sync
                 for touch in self.touches:
                     touch.handle_events()
-                return self.touches
                 
             if event.type == ecodes.EV_ABS: # Absolute cursor position
                 absevent = categorize(event)
@@ -218,7 +217,6 @@ class Touchscreen(object):
                 if absevent.event.code == ecodes.ABS_Y:
                     self.position.y = absevent.event.value
 
-        return []
 
     def _input_device(self):
         """Returns the evdev device class (not the path to input device!)"""
@@ -257,6 +255,6 @@ if __name__ == "__main__":
     try:
         signal.pause()
     except KeyboardInterrupt:
-        print("Stopping thread...")
+        print("Stopping driver...")
         ts.stop()
         exit()
