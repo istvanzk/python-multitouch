@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """
 Copyright (c) 2014 Pimoroni
+Copyright (c) 2019 Istvan Z. Kovacs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -25,7 +26,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-classifiers = ['Development Status :: 5 - Production/Stable',
+classifiers = ['Development Status :: Development/Alpha',
                'Operating System :: POSIX :: Linux',
                'License :: OSI Approved :: MIT License',
                'Intended Audience :: Developers',
@@ -35,15 +36,15 @@ classifiers = ['Development Status :: 5 - Production/Stable',
                'Topic :: Software Development',
                'Topic :: System :: Hardware']
 
-setup(name		= 'ft5406',
-	version		= '0.0.2',
-	author		= 'Philip Howard',
-	author_email	= 'phil@pimoroni.com',
-	description	= 'A module to drive the official FT5406 Raspberry Pi 7" touchscreen',
+setup(name		= 'ft5406-ep0510m09',
+	version		= '0.0.3',
+	author		= 'Philip Howard, Istvan Z. Kovacs',
+	author_email= 'phil@pimoroni.com, istvanzk@gmail.com',
+	description	= 'A module to drive the official FT5406 Raspberry Pi 7" or the 4DSystems GEN4-4DPI-50CT-CLB touchscreen',
 	long_description= open('README.md').read() + open('CHANGELOG.txt').read(),
 	license		= 'MIT',
 	keywords	= 'Raspberry Pi Explorer HAT',
-	url		= 'http://shop.pimoroni.com',
-	classifiers     = classifiers,
-	py_modules	= ['ft5406', 'hp4ts'],
+	url		    = '',
+	classifiers = classifiers,
+	py_modules	= ['ft5406', 'hp4ts', 'ep0510m09'],
 )

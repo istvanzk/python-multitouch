@@ -1,8 +1,8 @@
 # Python Multitouch Drivers
 
-Multi-touch pure Python drivers
+Multi-touch Python drivers
 
-FT5406: for the official 7" touchscreen display (by Pimoroni).
+FT5406: for the official 7" touchscreen display (pure Python by Pimoroni).
 
 EP0510M09: for the 4DSystems GEN4-4DPI-50CT-CLB, https://4dsystems.com.au/gen4-4dpi-50ct-clb (by IstvanZK)
 

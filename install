@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Installing FT5406 Library"
+echo "Installing Multi-touch Python Library"
 cd library/
 sudo python3 setup.py install
 echo "Installing GUI Library"
